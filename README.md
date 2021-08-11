@@ -15,3 +15,10 @@ Create A Godwoken Account On The EVM Layer 2 Testnet
   [clickhere](https://explorer.nervos.org/aggron/address/ckt1qyqwgqn7rva7vtjvk9qczgg75trx0d0u80ksvatc26)
 3. Completed Subbmision on layer 2 
   ![submmision](./gitcoin-1/transation-completed.png)
+
+## gitcoin: 2
+1. Deployed Smart Contract:
+	![contract](./gitcoin-2/succes-deploy.png)
+2. Transaction hash: 0x42f601bddbd35ae20e42e80b32660f885400144b3428155e8fbb2f7567a25e07
+3. Deployed contract address: 0x12DBFC113E9Df82A009D68c1Ed18E3bCF1D85bb0
+	
