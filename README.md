@@ -75,3 +75,12 @@ Create A Godwoken Account On The EVM Layer 2 Testnet
 3. Checking SUDT bal
   ![checking bal](./gitcoin-5/SUDT-balance.png)
 4. Ethereum address: 0xb68416932Fcfb924e4C0DE27DBF5fd77aC87a1D8
+
+## Gitcoin: 06 
+1. Succufully Genereate Deposit Receiver Address 
+  ![success](./gitcoin-6/deposit-reciever-address.png)
+2. Deposit Reciever
+  > ckt1q3dz2p4mdrvp5ywu4kk5edl2uc4p03puvx07g7kgqdau3n3dmypkqnxzuefxyp9wdghglncj77k5wt6p59sx6kukyjlwh5s467qgp8m25yqqqqqsqqqqqvqqqqqfjqqqqplhcxljhtaxrmk9wv0nlemcxng5fa32kaj60ufvkntpepjcq000g6gqqqqpqqqqqqcqqqqqxyqqqqx7asf60w8pqpte2sfcfn90fdfzxue7ff2g8sawe9wacnqat6jmygqngqqqqpxv9ejjvgz2u63w3l839aadguh5rgtqd4devf97a0fpt4uqsz0k4d5yz6fjlnaeynjvph38m06l6aavs7sasq9rqgqqqqqqcq204prv
+3. [Etherscan explorer](https://rinkeby.etherscan.io/tx/0x10d7412b0c78caad7970b429ef2291afde46a5b980d4909be71834a05c88ac22)
+4. [Nervos explorer](https://explorer.nervos.org/aggron/transaction/0x9a4d10fc85edb3189ee569600c21cfe96244c27d9d653b19a03e424e13f3f480)
+
