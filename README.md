@@ -21,4 +21,42 @@ Create A Godwoken Account On The EVM Layer 2 Testnet
 	![contract](./gitcoin-2/succes-deploy.png)
 2. Transaction hash: 0x42f601bddbd35ae20e42e80b32660f885400144b3428155e8fbb2f7567a25e07
 3. Deployed contract address: 0x12DBFC113E9Df82A009D68c1Ed18E3bCF1D85bb0
-	
+
+## gitcoin: 3
+1. Succufully issued contract
+  ![contract](./gitcoin-3/callikng-smart-contract.png)
+2. transactionHash: '0x8adc38663d9c11b2c09cb9a4a5da6b7fc0cbe707af74694ae9dddf9e1875c011'
+3. Deployed contract address: 0x12DBFC113E9Df82A009D68c1Ed18E3bCF1D85bb0
+4. > [
+    {
+      "inputs": [],
+      "stateMutability": "payable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "x",
+          "type": "uint256"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "get",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
