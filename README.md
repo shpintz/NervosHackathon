@@ -67,3 +67,11 @@ Create A Godwoken Account On The EVM Layer 2 Testnet
   ![SUDT token](./gitcoin/SUDT-layer1-tokens.png)
 3. [Link to the trasnsation ID created by sudt-cli](https://explorer.nervos.org/aggron/transaction/0x3adf42f5ac88cc8a083eb21c149c24397442388d6d7c92cd9ff0a5c8aa0077eb)
 4. sudt id: 1877
+
+## Gitcoin: 05
+1. Console after deploying smart contract
+  ![smart contract](./gitcoin-5/contract-proxy-depolyed.png)
+2. Proxy contract address: 0x2195AcD15Accc546eaab354c34C2e0eE5c734bd9
+3. Checking SUDT bal
+  ![checking bal](./gitcoin-5/SUDT-balance.png)
+4. Ethereum address: 0xb68416932Fcfb924e4C0DE27DBF5fd77aC87a1D8
