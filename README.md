@@ -60,3 +60,10 @@ Create A Godwoken Account On The EVM Layer 2 Testnet
       "type": "function"
     }
   ]
+
+## Gitcoin: 04 
+1. [Link to layer 1 funded](https://explorer.nervos.org/aggron/transaction/0x0c461d26faa443effa1494199633079ec610bc0272fcd138054cfdbede5c8d9d)
+2. Screenshot of creating SUDT tokens on layer 1 
+  ![SUDT token](./gitcoin/SUDT-layer1-tokens.png)
+3. [Link to the trasnsation ID created by sudt-cli](https://explorer.nervos.org/aggron/transaction/0x3adf42f5ac88cc8a083eb21c149c24397442388d6d7c92cd9ff0a5c8aa0077eb)
+4. sudt id: 1877
