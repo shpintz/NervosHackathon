@@ -84,3 +84,11 @@ Create A Godwoken Account On The EVM Layer 2 Testnet
 3. [Etherscan explorer](https://rinkeby.etherscan.io/tx/0x10d7412b0c78caad7970b429ef2291afde46a5b980d4909be71834a05c88ac22)
 4. [Nervos explorer](https://explorer.nervos.org/aggron/transaction/0x9a4d10fc85edb3189ee569600c21cfe96244c27d9d653b19a03e424e13f3f480)
 
+## gitcoin: 07
+  1. [my Project](https://github.com/shpintz/CryptoZombie)
+   - images
+    ![conntexct](./gitcoin-7/connected-v1.png)
+    ![creatingrequest](./gitcoin-7/creating-request.png)
+    ![successRequest](./gitcoin-7/success.png)
+  2. Deployed contract address: 0xAF1fc2799ED63DAd065c7470499dc7D05C0FEcf5
+  3. Deploy transaction hash: 0x622dfd9a430d51e1948ec7b5bb056e5293504392bef67d2e7cba2dc2d064cc9b
