@@ -90,5 +90,7 @@ Create A Godwoken Account On The EVM Layer 2 Testnet
     ![conntexct](./gitcoin-7/connected-v1.png)
     ![creatingrequest](./gitcoin-7/creating-request.png)
     ![successRequest](./gitcoin-7/success.png)
-  2. Deployed contract address: 0xAF1fc2799ED63DAd065c7470499dc7D05C0FEcf5
-  3. Deploy transaction hash: 0x622dfd9a430d51e1948ec7b5bb056e5293504392bef67d2e7cba2dc2d064cc9b
+  2. Deployed contract address: 0xFBc25d3a2e5f7E9aeF5f9cb77E2252F15c8305F8
+  3. Deploy transaction hash: 0x8b4fdba35d148c50c0f0fdf917041f53ff31af0855c19515d8511767d554f1920x622dfd9a430d51e1948ec7b5bb056e5293504392bef67d2e7cba2dc2d064cc9b
+
+
