@@ -28,7 +28,7 @@ Block Explorer URL: <Leave Empty>
 
 ![step-2-metamask.png](Document%20Porting%20an%20Existing%20Ethereum%20dApp%20to%20Poly%20679f056aed2c4564b9e43d983fb3616f/step-2-metamask.png)
 
-After that let us open our **project files** that if want to download above and setup the environment
+After that let us open our **[project files](https://github.com/shpintz/nervos-example)** that if want to [download](https://github.com/shpintz/nervos-example) above and setup the environment
 
 ```markdown
 cd ~/projects
@@ -177,3 +177,7 @@ Once connected correctly you should be able to get your polyjuice address
 Deployed contract address: **0x56B5aB1dE889Ef6f4009b0AC1581374fA3E9A527**
 
 Deploy transaction hash: **0xc22a7d50c8e16c45d0e12f95860f6a818e944b4a9bec007fccb20073f70a1a1d**
+
+Github: [https://github.com/shpintz/nervos-example](https://github.com/shpintz/nervos-example)
+
+[GitHub - shpintz/nervos-example](https://github.com/shpintz/nervos-example)
