@@ -2,7 +2,7 @@
 
 Created: August 20, 2021 9:44 PM
 
-Check out the video [here](https://youtu.be/lwAav9J62sI)
+Check out the video [here](https://youtu.be/xMG0vwhBW5Q)
 
 Alrighty, so what we are going to be doing is **porting an existing Ethereum application to run on Nervos' EVM, which is compatible with the layer 2 networks of things in nervos.** 
 
