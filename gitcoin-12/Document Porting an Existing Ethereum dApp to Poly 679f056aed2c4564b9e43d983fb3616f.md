@@ -4,7 +4,7 @@ Created: August 20, 2021 9:44 PM
 
 Alrighty, so what we are going to be doing is **porting an existing Ethereum application to run on Nervos' EVM, which is compatible with the layer 2 network of things in nervos.** 
 
-We are going to be using Metamask where we will be able to create a way to turn a confirmation dialog bag to display the transition instead of the hex value when you send crypto around the blockchain... but first, we are going to need to be connected to the godwoken testnet which is what we will be connecting too.
+We are going to be using Metamask where we will be able to create a way to turn a confirmation dialog to display the transition instead of the hex value when you send crypto around the blockchain... but first, we are going to need to be connected to the godwoken testnet which is what we will be connecting too.
 
 Polyjuice is compatible with existing EVM smart contracts, but is still being developed. 
 
@@ -54,7 +54,11 @@ cd ~/projects/nervos-example
 yarn ui
 ```
 
-If you want to join on the contract here is the address: 0x5a980781512aA617b482a0f434B2C04e86D9e54b
+If you want to join on the contract here is the address: 
+
+ETH: 0x5a980781512aA617b482a0f434B2C04e86D9e54b
+
+Polyjuice address: 0x7c6560761c4d068FcF1bbdD4Bd0011b1d516AA3e
 
 Now to set begin porting to the Nervos' Layer 2 network. Before we begin we are going to need to download 2 dependence to work with Godwoken and PolyJuice.
 
@@ -134,6 +138,12 @@ Godwoken requires the gas limit to be set when sending transactions. This may no
 
 To implement this, we can make a simple change to default the gas limit to 6000000 for the user when they make transactions. In our project, this is all handled in the file ZombieFactoryWrapper.ts
 
+```tsx
+const DEFAULT_SEND_OPTIONS = {
+    gas: 6000000
+};
+```
+
 We simply define a simple object that will contain the gas property used by Metamask. We will be adding it into the send() object as the default value inside our createRandomZombie function
 
 ```tsx
@@ -199,7 +209,12 @@ async function deployContract() {
     }
 ```
 
-We also want to create a **useState()** variables such as,  **const [deployTxHash,setDeployTxHash] = useState('')** to be able to set the transaction hash and display it into our render, I will let you display it yourself.
+We also want to create a **useState()** variables such as,  to be able to set the transaction hash and display it into our render, I will let you display it yourself.
+
+```tsx
+**const [deployTxHash,setDeployTxHash] = useState<string | undefined>();
+const [polyjuiceAddress, setPolyjuiceAddress] = useState<string | undefined>();**
+```
 
 Now we want to be able to display the polyjuice address in our application, every etherum address can be translated into a polyjuice address on Nervos layer 2, this can be done with the addressTranslater class from the other package we had downloaded, let us import it into our app.tsx file.
 
