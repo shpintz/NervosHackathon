@@ -4,7 +4,7 @@ Created: August 20, 2021 9:44 PM
 
 Alrighty, so what we are going to be doing is **porting an existing Ethereum application to run on Nervos' EVM, which is compatible with the layer 2 network of things in nervos.** 
 
-We are going to be using Metamask where we will be able to create a way to turn a confirmation dialog bag to display the transition instead of the hex value when you send crypto around the blockchain... but first, we are going to need to be connected to the godwoken tesnet which is what we will be connecting too.
+We are going to be using Metamask where we will be able to create a way to turn a confirmation dialog bag to display the transition instead of the hex value when you send crypto around the blockchain... but first, we are going to need to be connected to the godwoken testnet which is what we will be connecting too.
 
 Polyjuice is compatible with existing EVM smart contracts, but is still being developed. 
 
@@ -28,7 +28,7 @@ Block Explorer URL: <Leave Empty>
 
 ![step-2-metamask.png](Document%20Porting%20an%20Existing%20Ethereum%20dApp%20to%20Poly%20679f056aed2c4564b9e43d983fb3616f/step-2-metamask.png)
 
-After that let us open our **project files** that if want to download above and setup the environment
+After that let us open our **[project files](https://github.com/shpintz/nervos-example)** that if want to [download](https://github.com/shpintz/nervos-example) above and setup the environment
 
 ```markdown
 cd ~/projects
@@ -54,7 +54,7 @@ cd ~/projects/nervos-example
 yarn ui
 ```
 
-If you want to join on the contract here is the address: 0x171B7a4c751F03476c50Ff016B983AC882e0A170
+If you want to join on the contract here is the address: 0x5a980781512aA617b482a0f434B2C04e86D9e54b
 
 Now to set begin porting to the Nervos' Layer 2 network. Before we begin we are going to need to download 2 dependence to work with Godwoken and PolyJuice.
 
@@ -149,6 +149,58 @@ async createRandomZombie(name: string, imgURL: string, fromAddress: string) {
     }
 ```
 
+We also are going to need to edit out the deploy function to be able to deploy contracts as well. 
+
+```tsx
+async deploy(fromAddress: string) {
+        const deployTx = await (this.contract
+            .deploy({
+                data: ZombieFactoryJSON.bytecode,
+                arguments: []
+            })
+            .send({
+                ...DEFAULT_SEND_OPTIONS,
+                from: fromAddress,
+                to: '0x0000000000000000000000000000000000000000'
+            } as any) as any);
+
+        this.useDeployed(deployTx.contractAddress);
+
+        return deployTx.transactionHash;
+    }
+```
+
+you need to add in the deploy gas object within the send method, it took a little bit of configuration but this seems to be able to create a contract that will create a contract under your address.
+
+We will also need to go back into our **app.tx** file and configure our **deployContract** to be able to grab the transaction hash so we will be able to present it to the user
+
+```tsx
+async function deployContract() {
+        const _contract = new ZombieFactoryWrapper(web3);
+
+        try {
+            setDeployTxHash(undefined);
+            setTransactionInProgress(true);
+
+            const transactionHash = await _contract.deploy(account);
+
+            setDeployTxHash(transactionHash);
+            setExistingContractAddress(_contract.address);
+            toast(
+                'Successfully deployed a smart-contract. You can now proceed to get or set the value in a smart contract.',
+                { type: 'success' }
+            );
+        } catch (error) {
+            console.error(error);
+            toast('There was an error sending your transaction. Please check developer console.');
+        } finally {
+            setTransactionInProgress(false);
+        }
+    }
+```
+
+We also want to create a **useState()** variables such as,  **const [deployTxHash,setDeployTxHash] = useState('')** to be able to set the transaction hash and display it into our render, I will let you display it yourself.
+
 Now we want to be able to display the polyjuice address in our application, every etherum address can be translated into a polyjuice address on Nervos layer 2, this can be done with the addressTranslater class from the other package we had downloaded, let us import it into our app.tsx file.
 
 ```tsx
@@ -176,5 +228,8 @@ Once connected correctly you should be able to get your polyjuice address
 
 Deployed contract address: **0x56B5aB1dE889Ef6f4009b0AC1581374fA3E9A527**
 
-Deploy transaction hash: **about**
-Repo https://github.com/shpintz/nervos-example
+Deploy transaction hash: **0xc22a7d50c8e16c45d0e12f95860f6a818e944b4a9bec007fccb20073f70a1a1d**
+
+Github: [https://github.com/shpintz/nervos-example](https://github.com/shpintz/nervos-example)
+
+[GitHub - shpintz/nervos-example](https://github.com/shpintz/nervos-example)
