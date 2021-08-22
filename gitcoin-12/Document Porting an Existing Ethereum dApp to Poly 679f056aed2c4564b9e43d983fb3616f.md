@@ -2,7 +2,9 @@
 
 Created: August 20, 2021 9:44 PM
 
-Alrighty, so what we are going to be doing is **porting an existing Ethereum application to run on Nervos' EVM, which is compatible with the layer 2 network of things in nervos.** 
+Check out the video [here](https://youtu.be/lwAav9J62sI)
+
+Alrighty, so what we are going to be doing is **porting an existing Ethereum application to run on Nervos' EVM, which is compatible with the layer 2 networks of things in nervos.** 
 
 We are going to be using Metamask where we will be able to create a way to turn a confirmation dialog to display the transition instead of the hex value when you send crypto around the blockchain... but first, we are going to need to be connected to the godwoken testnet which is what we will be connecting too.
 
