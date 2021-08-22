@@ -93,6 +93,13 @@ Create A Godwoken Account On The EVM Layer 2 Testnet
   2. Deployed contract address: 0xFBc25d3a2e5f7E9aeF5f9cb77E2252F15c8305F8
   3. Deploy transaction hash: 0x8b4fdba35d148c50c0f0fdf917041f53ff31af0855c19515d8511767d554f1920x622dfd9a430d51e1948ec7b5bb056e5293504392bef67d2e7cba2dc2d064cc9b
 
+## gitcoin: 08
+  Task Submission:
+1. ![img](.gitcoin-8/ECM-on-Layer-2-with-forcebridge.png)
+2. SUDT_PROXY_CONTRACT_ADDRESS : 0x2195AcD15Accc546eaab354c34C2e0eE5c734bd9
+3. [project](https://github.com/shpintz/CryptoZombie/tree/task-8)
+4. [hackathon](https://github.com/shpintz/NervosHackathon)
+
 
 ## gitcoin: 12
  checkout [notes](https://github.com/shpintz/NervosHackathon/blob/main/gitcoin-12/Document%20Porting%20an%20Existing%20Ethereum%20dApp%20to%20Poly%20679f056aed2c4564b9e43d983fb3616f.md)
